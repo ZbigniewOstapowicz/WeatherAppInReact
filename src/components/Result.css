@@ -1,5 +1,5 @@
-.result{
-    overflow: hidden;
+.result {
+  overflow: hidden;
 }
 .result__main-icon {
   font-size: 64px;
@@ -13,7 +13,7 @@
 .result__min-temp,
 .result__max-temp {
   font-size: 24px;
-  margin: 0 10%;
+  margin: 0 35px;
 }
 .result__min-temp {
   color: lightskyblue;
@@ -27,42 +27,35 @@
   font-size: 24px;
 }
 
-.result__btn{
-margin: 0 auto;
-width: 25%;
-padding: 2%;
-border-radius: 10px;
-background-color: rgb(24, 65, 177);
-border: none;
-color: lightgray;
-cursor: pointer;
-transition: .2s;
+.result__btn {
+  margin: 0 auto;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(24, 65, 177);
+  border: none;
+  color: lightgray;
+  cursor: pointer;
+  transition: 0.2s;
 }
-.result__btn:hover{
-background-color:rgb(34, 75, 187);
+.result__btn:hover {
+  background-color: rgb(34, 75, 187);
 }
 @media (min-width: 1024px) {
   .result {
-    margin: 2%;
+    margin: 0px;
   }
-  .result__min-temp,
-  .result__max-temp {
-    margin: 0 5%;
-  }
-  .result__btn{
-      padding: 1%;
-      width: 15%;
-  }
+
+  /* .result__btn {
+    padding: 1%;
+    width: 15%;
+  } */
 }
-@media (min-width:1600px){
-  .result{
-    margin: 1% 0;
+@media (min-width: 1600px) {
+  .result {
+    margin: 10px 0;
   }
-    .result__btn{
-        width: 10%;
-    }
-     .result__min-temp,
-  .result__max-temp {
-    margin: 0 4%;
+  .result__btn {
+    width: 150px;
   }
 }
