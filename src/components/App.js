@@ -2,36 +2,36 @@ import React, { Component } from "react";
 import "./App.css";
 import "weather-icons/css/weather-icons.css";
 import Form from "./Form";
+import Result from './Result'
 
-
-const keyToAPI='a67178c4d192b130e85780b3051d411d';
+const keyToAPI = "a67178c4d192b130e85780b3051d411d";
 class App extends Component {
   state = {
     value: "",
-    date: '',
-    city: '',
-    sunrise: '',
-    sunset: '',
-    temp: '',
-    minTemp:'',
-    maxTemp:'',
-    pressure: '',
-    wind: '',
-    description:'',
-    icon:'',
-    country:'',
+    date: "",
+    city: "",
+    sunrise: "",
+    sunset: "",
+    temp: "",
+    minTemp: "",
+    maxTemp: "",
+    pressure: "",
+    wind: "",
+    description: "",
+    icon: "",
+    country: "",
     err: false
   };
- weatherIcon = {
-      Thunderstorm: "wi-thunderstorm",
-      Drizzle: "wi-sleet",
-      Rain: "wi-storm-showers",
-      Snow: "wi-snow",
-      Atmosphere: "wi-fog",
-      Clear: "wi-day-sunny",
-      Clouds: "wi-day-fog"
-    };
- get_WeatherIcon(icons, rangeId) {
+  weatherIcon = {
+    Thunderstorm: "wi-thunderstorm",
+    Drizzle: "wi-sleet",
+    Rain: "wi-storm-showers",
+    Snow: "wi-snow",
+    Atmosphere: "wi-fog",
+    Clear: "wi-day-sunny",
+    Clouds: "wi-day-fog"
+  };
+  get_WeatherIcon(icons, rangeId) {
     switch (true) {
       case rangeId >= 200 && rangeId < 232:
         this.setState({ icon: icons.Thunderstorm });
@@ -63,20 +63,20 @@ class App extends Component {
       value: e.target.value
     });
   };
-  handelButtonSubmit=e=>{
+  handelButtonSubmit = e => {
     e.preventDefault();
-    const API=`http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${keyToAPI}&units=metric`;
+    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${keyToAPI}&units=metric`;
 
-     fetch(API)
+    fetch(API)
       .then(response => {
         if (response.ok) {
-          return response
+          return response;
         }
-        throw Error("Nie udało się")
+        throw Error("Nie udało się");
       })
       .then(response => response.json())
       .then(data => {
-        const time = new Date().toLocaleString()
+        const time = new Date().toLocaleString();
         this.setState(state => ({
           err: false,
           date: time,
@@ -84,13 +84,13 @@ class App extends Component {
           sunrise: data.sys.sunrise,
           sunset: data.sys.sunset,
           temp: data.main.temp,
-          minTemp:data.main.temp_min,
-          maxTemp:data.main.temp_max,
+          minTemp: data.main.temp_min,
+          maxTemp: data.main.temp_max,
           pressure: data.main.pressure,
           wind: data.wind.speed,
           city: state.value,
-          description:data.weather[0].description,
-        }))
+          description: data.weather[0].description
+        }));
         this.get_WeatherIcon(this.weatherIcon, data.weather[0].id);
       })
       .catch(err => {
@@ -98,21 +98,18 @@ class App extends Component {
         this.setState(prevState => ({
           err: true,
           city: prevState.value
-        }))
-      })
-    
-  }
+        }));
+      });
+  };
   render() {
     return (
       <div className="App">
-        <Form value={this.state.value} change={this.handelInputChange}
-        submit={this.handelButtonSubmit}></Form>
-  <h1>{this.state.city}, {this.state.country}</h1>
-        <i className={`wi ${this.state.icon}`}></i>
-    <p>{Math.round(this.state.temp)}</p>
-  <spn>min:{this.state.minTemp}</spn>
-  <spn>max:{Math.round(this.state.maxTemp)}</spn>
-  <p>{this.state.description}</p>
+        <Form
+          value={this.state.value}
+          change={this.handelInputChange}
+          submit={this.handelButtonSubmit}
+        ></Form>
+        <Result weather={this.state}></Result>
       </div>
     );
   }
