@@ -1,5 +1,5 @@
 {
-  "main.css": "/WeatherAppInReact/./static/css/main.41f55126.chunk.css",
+  "main.css": "/WeatherAppInReact/./static/css/main.e36fe3e2.chunk.css",
   "main.js": "/WeatherAppInReact/./static/js/main.9c8f3980.chunk.js",
   "main.js.map": "/WeatherAppInReact/./static/js/main.9c8f3980.chunk.js.map",
   "runtime~main.js": "/WeatherAppInReact/./static/js/runtime~main.f1fc774d.js",
@@ -8,9 +8,9 @@
   "static/js/2.52f690f9.chunk.js": "/WeatherAppInReact/./static/js/2.52f690f9.chunk.js",
   "static/js/2.52f690f9.chunk.js.map": "/WeatherAppInReact/./static/js/2.52f690f9.chunk.js.map",
   "index.html": "/WeatherAppInReact/./index.html",
-  "precache-manifest.72d875d7a0c3d19105014af0e761b51a.js": "/WeatherAppInReact/./precache-manifest.72d875d7a0c3d19105014af0e761b51a.js",
+  "precache-manifest.0be2c214ed213a7a3981d7fa8c5949d2.js": "/WeatherAppInReact/./precache-manifest.0be2c214ed213a7a3981d7fa8c5949d2.js",
   "service-worker.js": "/WeatherAppInReact/./service-worker.js",
   "static/css/2.3d7b9b38.chunk.css.map": "/WeatherAppInReact/./static/css/2.3d7b9b38.chunk.css.map",
-  "static/css/main.41f55126.chunk.css.map": "/WeatherAppInReact/./static/css/main.41f55126.chunk.css.map",
+  "static/css/main.e36fe3e2.chunk.css.map": "/WeatherAppInReact/./static/css/main.e36fe3e2.chunk.css.map",
   "static/media/weather-icons.css": "/WeatherAppInReact/./static/media/weathericons-regular-webfont.ed0943f2.svg"
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "fc49c9790084320a84fc",
-    "url": "/WeatherAppInReact/./static/css/main.41f55126.chunk.css"
+    "revision": "d8d9c4588666bd09fa2a",
+    "url": "/WeatherAppInReact/./static/css/main.e36fe3e2.chunk.css"
   },
   {
-    "revision": "fc49c9790084320a84fc",
+    "revision": "d8d9c4588666bd09fa2a",
     "url": "/WeatherAppInReact/./static/js/main.9c8f3980.chunk.js"
   },
   {
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/WeatherAppInReact/./static/media/weathericons-regular-webfont.1cd48d78.woff2"
   },
   {
-    "revision": "4b658767da6bd92ce2addb3ce512784d",
-    "url": "/WeatherAppInReact/./static/media/weathericons-regular-webfont.4b658767.eot"
-  },
-  {
     "revision": "8cac70ebda3f23ce472110d9f21e8593",
     "url": "/WeatherAppInReact/./static/media/weathericons-regular-webfont.8cac70eb.woff"
+  },
+  {
+    "revision": "4b658767da6bd92ce2addb3ce512784d",
+    "url": "/WeatherAppInReact/./static/media/weathericons-regular-webfont.4b658767.eot"
   },
   {
     "revision": "4618f0de2a818e7ad3fe880e0b74d04a",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/WeatherAppInReact/./static/media/weathericons-regular-webfont.ed0943f2.svg"
   },
   {
-    "revision": "6cc29bfffd9f035bf639058dfa91568a",
+    "revision": "3af361193200d701871618276819fe47",
     "url": "/WeatherAppInReact/./index.html"
   }
 ];
