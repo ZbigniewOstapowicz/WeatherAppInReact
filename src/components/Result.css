@@ -43,7 +43,7 @@ background-color:rgb(34, 75, 187);
 }
 @media (min-width: 1024px) {
   .result {
-    margin: 4%;
+    margin: 2%;
   }
   .result__min-temp,
   .result__max-temp {
@@ -55,6 +55,9 @@ background-color:rgb(34, 75, 187);
   }
 }
 @media (min-width:1600px){
+  .result{
+    margin: 1% 0;
+  }
     .result__btn{
         width: 10%;
     }
