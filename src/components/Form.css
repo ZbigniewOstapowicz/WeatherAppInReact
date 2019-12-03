@@ -38,8 +38,6 @@ background-color:rgb(34, 75, 187);
     .form{
         flex-wrap: nowrap;
     }
-    .form__input{
-    }
     .form__btn{
         flex-basis: 135px;
         padding: 12px;
