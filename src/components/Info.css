@@ -1,0 +1,22 @@
+.info{
+margin: 20px auto;
+font-size: 18px;
+width: 100%;
+}
+
+.info__icon{
+    text-align: left;
+    font-size: 32px;
+}
+
+.info__text{
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+}
+
+/* @media (orientation:landscape){
+    .info__text{
+        width: 30%;
+    }
+} */
