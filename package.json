@@ -1,6 +1,6 @@
 {
   "homepage": " https://zbigniewostapowicz.github.io/WeatherAppInReact/.",
-  "name": "nazwa-katalogu",
+  "name": "weather-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
